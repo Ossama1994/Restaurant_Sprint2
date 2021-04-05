@@ -1,0 +1,22 @@
+create database if not exists restaurant;
+use restaurant;
+
+create table admin(
+    idAdmin int(4) auto_increment primary key,
+    Login varchar(50),
+    Email varchar(50),
+    Password varchar(50),
+);
+
+create table Categoryproduct(
+    idC int(4) auto_increment primary key,
+    namec varchar(50),
+ 
+);
+
+create table product(
+    idp int(4) auto_increment primary key,
+    namep varchar(50),
+    pricep varchar(255),
+    imagep varchar(50),   -- admin ou visiteur
+);
